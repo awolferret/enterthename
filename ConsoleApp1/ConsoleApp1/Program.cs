@@ -35,7 +35,7 @@ namespace ConsoleApp1
                         password = Console.ReadLine();
                         break;
                     case "changeBackgroundColor":
-                        Console.WriteLine("Доступные цвета:Blue,Red,Cyan");
+                        Console.WriteLine("Доступные цвета:Blue,Red");
                         changeBackgroundColor = Console.ReadLine();
 
                         if (changeBackgroundColor == "Blue")
@@ -46,13 +46,9 @@ namespace ConsoleApp1
                         {
                             Console.BackgroundColor = ConsoleColor.Red;
                         }
-                        else
-                        {
-                            Console.BackgroundColor = ConsoleColor.Cyan;
-                        }
                         break;
                     case "changeFontColor":
-                        Console.WriteLine("Доступные цвета: Yellow,Green,Magenta");
+                        Console.WriteLine("Доступные цвета: Yellow,Green");
                         changeFontColor = Console.ReadLine();
 
                         if (changeFontColor == "Yellow")
@@ -62,10 +58,6 @@ namespace ConsoleApp1
                         else if (changeFontColor == "Green")
                         {
                             Console.ForegroundColor = ConsoleColor.Green;
-                        }
-                        else
-                        {
-                            Console.ForegroundColor = ConsoleColor.Magenta;
                         }
                         break;
                     case "info":
